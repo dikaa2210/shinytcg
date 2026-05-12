@@ -1,0 +1,73 @@
+/* Layout Wrapper */
+.detail-wrapper {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 400px 1fr 300px;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+/* Gambar */
+.main-frame {
+    border: 2px solid #1C4A8C;
+    border-radius: 15px;
+    padding: 20px;
+    background: white;
+}
+.main-frame img { width: 100%; }
+
+/* Info Tengah */
+.p-title { font-size: 24px; color: #1C4A8C; margin-bottom: 10px; }
+.p-price { font-size: 32px; margin: 20px 0; font-weight: 800; }
+.p-tabs { border-bottom: 2px solid #eee; margin-bottom: 20px; }
+.p-tabs span { padding: 10px 20px; display: inline-block; cursor: pointer; }
+.p-tabs span.active { border-bottom: 3px solid #FFCB05; font-weight: bold; }
+
+/* Panel Beli Kanan (Themed) */
+.detail-action-card {
+    background: #1C4A8C; /* Biru ShinyTCG */
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+    height: fit-content;
+    position: sticky;
+    top: 100px;
+}
+
+.detail-action-card h3 { color: #FFCB05; margin-bottom: 15px; }
+
+.qty-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.qty-box button { background: #FFCB05; border: none; border-radius: 5px; width: 30px; height: 30px; cursor: pointer; font-weight: bold; }
+.qty-box input { width: 50px; text-align: center; border-radius: 5px; border: none; }
+
+.btn-primary {
+    display: block;
+    background: #FFCB05; /* Kuning Pikachu */
+    color: #1C4A8C;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-secondary {
+    display: block;
+    background: #FFCB05; /* Kuning Pikachu */
+    color: #1C4A8C;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.extra-actions { display: flex; justify-content: space-around; margin-top: 20px; font-size: 14px; color: #FFCB05; }

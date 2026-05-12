@@ -1,0 +1,165 @@
+/* Container Utama Cart */
+.cart-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.cart-container h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.cart-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Daftar Barang */
+.cart-items {
+    flex: 2; /* Lebih lebar dari summary */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border: 1px solid #eee;
+}
+
+.cart-item img {
+    width: 80px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.item-info {
+    flex: 1;
+}
+
+.item-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.item-price {
+    color: #1C4A8C;
+    font-weight: bold;
+}
+
+/* Input Jumlah Barang */
+.item-quantity {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 30px;
+}
+
+.item-quantity input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.item-quantity button {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    width: 25px;
+    cursor: pointer;
+}
+
+/* Subtotal & Hapus */
+.item-subtotal {
+    font-weight: bold;
+    width: 120px;
+}
+
+.btn-remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #e74c3c;
+}
+
+/* Ringkasan Belanja */
+.cart-summary {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 100px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.summary-line.total {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1C4A8C;
+}
+
+.btn-checkout {
+    display: block;
+    background: #FFCB05;
+    color: #1C4A8C;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-checkout:hover {
+    background: #1C4A8C;
+    color: #FFCB05;
+}
+/* Style Tombol Back */
+.btn-back {
+    display: inline-flex; /* Berubah dari absolute ke inline-flex */
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background-color: #1C4A8C;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    margin-bottom: 20px; /* Memberi jarak aman dengan elemen di bawahnya */
+    margin-top: 10px;    /* Memberi jarak dari atas layar */
+    margin-left: 10px;   /* Memberi jarak dari kiri layar */
+
+}
+
+.btn-back .arrow {
+    font-size: 18px;
+    line-height: 0;
+}
+
+/* Efek saat kursor menempel */
+.btn-back:hover {
+    background-color: #FFCB05; /* Berubah jadi kuning saat hover */
+    color: #1C4A8C;            /* Teks jadi biru */
+    transform: translateX(-5px); /* Sedikit bergeser ke kiri (efek panah) */
+}

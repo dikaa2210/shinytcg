@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+.navbar {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%; 
+    background-color: #1C4A8C; 
+    color: white;
+    position: sticky; 
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo h1 {
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #FFCB05; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 20px;
+}
+
+
+.nav-links a {
+    text-decoration: none; 
+    color: white;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #FFCB05;
+    border-bottom: 2px solid #FFCB05; 
+}
+.cart-button-link {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Styling lingkaran kuningnya */
+.cart-circle {
+    background-color: #FFCB05; /* Kuning sesuai gambar */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+/* Efek saat tombol ditekan/disentuh kursor */
+.cart-circle:hover {
+    transform: scale(1.1); /* Sedikit membesar saat hover */
+    background-color: #ffd700;
+}
+
+.cart-icon {
+    font-size: 22px;
+    color: #1C4A8C; /* Warna ikon menyesuaikan biru header */
+
+}
+.banner-container {
+    width: 100%;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: fadeBanner 20s infinite; 
+}
+
+
+.banner-img:nth-child(1) {
+    animation-delay: 4s;
+}
+
+.banner-img:nth-child(2) {
+    animation-delay: 8s; 
+}
+
+.banner-img:nth-child(3) {
+    animation-delay: 12s;
+}
+
+.banner-img:nth-child(4) {
+    animation-delay: 16s;
+}
+
+.banner-img:nth-child(5) {
+    animation-delay: 20s;
+}
+
+
+@keyframes fadeBanner {
+    0% { opacity: 0; }
+    10% { opacity: 1; }
+    30% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 0; }
+}
+
+
+.category-section {
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #fff;
+}
+
+
+.category-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+
+.category-grid {
+    display: grid;
+   
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+}
+
+
+.category-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #e0e0e0; 
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    height: 120px; 
+}
+
+
+.category-item:hover {
+    border-color: #1C4A8C; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transform: scale(1.02); 
+}
+
+
+.category-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; 
+    filter: grayscale(20%); 
+}
+
+
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

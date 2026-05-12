@@ -1,0 +1,145 @@
+/* --- CHECKOUT STYLE --- */
+.checkout-container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.checkout-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 30px;
+}
+
+.checkout-form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.checkout-form h2 {
+    font-size: 20px;
+    color: #1C4A8C;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pay-item {
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+}
+
+.pay-item:hover {
+    background: #f9f9f9;
+}
+
+/* Sidebar Ringkasan */
+.checkout-summary {
+    background: #fdfdfd;
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #1C4A8C;
+    height: fit-content;
+}
+
+.product-mini {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-mini img {
+    width: 50px;
+    border-radius: 5px;
+}
+
+.summary-line {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.total-final {
+    font-weight: bold;
+    font-size: 18px;
+    color: #1C4A8C;
+    margin-top: 20px;
+}
+
+.btn-pay {
+    width: 100%;
+    background: #FFCB05;
+    color: #1C4A8C;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-pay:hover {
+    background: #1C4A8C;
+    color: white;
+}
+.btn-back {
+    display: inline-flex; /* Berubah dari absolute ke inline-flex */
+    align-items: center;
+    gap: 8px;
+    padding: 8px 15px;
+    background-color: #1C4A8C;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: 0.3s ease;
+    margin-bottom: 20px; /* Memberi jarak aman dengan elemen di bawahnya */
+    margin-top: 10px;    /* Memberi jarak dari atas layar */
+    margin-left: 10px;   /* Memberi jarak dari kiri layar */
+
+}
+
+.btn-back .arrow {
+    font-size: 18px;
+    line-height: 0;
+}
+
+/* Efek saat kursor menempel */
+.btn-back:hover {
+    background-color: #FFCB05; /* Berubah jadi kuning saat hover */
+    color: #1C4A8C;            /* Teks jadi biru */
+    transform: translateX(-5px); /* Sedikit bergeser ke kiri (efek panah) */
+}
